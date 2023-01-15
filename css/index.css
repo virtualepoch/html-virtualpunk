@@ -1,22 +1,23 @@
-/* ///////////////////////////////////////////////////////////// */
 /* FONTS ////////////////////////////////////////////////////// */
+@font-face {
+  font-family: CyberPunk;
+  src: url(/Cyberpunk-Regular.ttf);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-/* ///////////////////////////////////////////////////////////// */
 /* VARIABLES ////////////////////////////////////////////////// */
 :root {
-  /* BLUE CHROME ////////////////////// */
-  --blue-chrome-1: #0b1634;
-  --blue-chrome-2: #0e2650;
-  --blue-chrome-3: #266c9d;
-  --blue-chrome-4: #74d2d4;
-  --blue-chrome-5: #e2dcd4;
+  --blue-chrome-1: black;
+  --blue-chrome-2: darkred;
+  --blue-chrome-3: red;
+  --blue-chrome-4: aqua;
+  --blue-chrome-5: white;
   --pink-test: #ff0077;
   --heading-drop-shadow: drop-shadow(-3px 1px 1px var(--blue-chrome-1));
   --text-drop-shadow: drop-shadow(-2px 1px 1px var(--blue-chrome-3));
 }
 
-/* ///////////////////////////////////////////////////////////// */
 /* GLOBAL STYLING ///////////////////////////////////////////// */
 html {
   scroll-behavior: smooth;
@@ -35,7 +36,8 @@ html {
 }
 
 body {
-  background: var(--blue-chrome-1);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(170deg, black 200px, red 200px 210px, rgb(55, 0, 0) 210px 220px, black 220px 230px, darkred);
 }
 
 .landing-background,
@@ -50,7 +52,7 @@ body {
   bottom: 0;
   z-index: -2;
 }
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .footer-background {
     display: none;
   }
@@ -61,7 +63,7 @@ body {
 .contact-overlay-container {
   width: 100%;
   height: 100%;
-  background: rgb(11, 22, 52, 0.9);
+  background: rgb(61, 22, 52, 0.9);
   position: fixed;
   top: -100%;
   z-index: 8888;
@@ -204,7 +206,7 @@ body {
 
 @media (max-width: 700px) {
   .contact {
-    background: var(--blue-chrome-1);
+    background: rgb(45, 0, 0);
   }
 }
 
@@ -222,7 +224,7 @@ body {
 .button-contact-link {
   width: 60px;
   height: 60px;
-  background: var(--blue-chrome-1) center / 50% no-repeat;
+  background: rgb(55, 0, 0) center / 50% no-repeat;
   box-shadow: 1px -2px 5px 1px rgb(255, 255, 255, 0.1), -4px 4px 5px 1px rgb(0, 0, 0, 0.4);
   border-radius: 10px;
   margin: 20px;
@@ -235,9 +237,9 @@ body {
 .button-to-top {
   width: 80px;
   height: 50px;
-  border-top: 1px solid white;
+  border-top: 1px solid aqua;
   position: fixed;
-  bottom: -60px;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 888;
@@ -247,6 +249,7 @@ body {
   justify-content: center;
   transition: bottom 300ms ease-in-out;
   cursor: pointer;
+  transform: translateY(60px);
 }
 
 .button-to-top:hover {
@@ -254,7 +257,7 @@ body {
 }
 
 .button-to-top.open {
-  bottom: 0;
+  transform: none;
 }
 
 .button-to-top-bars {
@@ -269,8 +272,9 @@ body {
   content: "";
   width: 100%;
   height: 100%;
-  background: white;
+  background: aqua;
   position: absolute;
+  filter: drop-shadow(0 0 3px aqua);
 }
 
 .button-to-top-bars::before {

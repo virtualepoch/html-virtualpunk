@@ -28,9 +28,9 @@
   min-width: 300px;
   height: 100%;
   min-height: 300px;
-  color: white;
+  color: red;
   font: 500 50px Raleway;
-  filter: drop-shadow(-2px 3px 1px rgb(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 5px red);
   padding: 20px;
   flex: 1;
   display: flex;
@@ -178,7 +178,7 @@
 }
 
 .content-row {
-  background: var(--blue-chrome-2);
+  background: black;
   color: var(--blue-chrome-4);
   padding: 20px;
   display: flex;
@@ -207,7 +207,7 @@
 }
 
 .content-row.row-2 {
-  background: var(--blue-chrome-4);
+  background: red;
   color: var(--blue-chrome-3);
 }
 
@@ -395,7 +395,6 @@
   color: white;
   width: 100%;
   height: 200px;
-  background: var(--blue-chrome-1);
   display: flex;
   align-items: center;
   justify-content: center;

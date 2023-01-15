@@ -1,19 +1,19 @@
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* COLORS ///////////////////////////////////////////////////// */
 :root {
-  --classic-double-blue-1: #12232e;
-  --classic-double-blue-2: #203647;
-  --classic-double-blue-3: #007cc7;
-  --classic-double-blue-4: #4da8da;
-  --classic-double-blue-5: #eefbfb;
+  --classic-double-blue-1: black;
+  --classic-double-blue-2: darkred;
+  --classic-double-blue-3: red;
+  --classic-double-blue-4: aqua;
+  --classic-double-blue-5: white;
   --blue-chrome-1: #0b1634;
-  --blue-chrome-1-opaque: rgb(11, 22, 52, 0.7);
+  --blue-chrome-1-opaque: yellow;
   --blue-chrome-2: #0e2650;
-  --blue-chrome-2-opaque: rgb(14, 38, 80, 0.7);
+  --blue-chrome-2-opaque: yellow;
   --blue-chrome-3: #266c9d;
-  --blue-chrome-3-opaque: rgb(38, 108, 157, 0.7);
+  --blue-chrome-3-opaque: rgb(200, 0, 0, 0.7);
   --blue-chrome-4: #74d2d4;
-  --blue-chrome-4-opaque: rgb(116, 210, 212, 0.7);
+  --blue-chrome-4-opaque: rgb(200, 0, 0, 0.7);
   --blue-chrome-5: #e2dcd4;
   --blue-chrome-5-opaque: rgb(226, 220, 212, 0.3);
   --blue-chrome-6: #fff;
@@ -163,7 +163,7 @@
 .image-flip .front {
   font: 700 20px sans-serif;
   text-decoration: underline;
-  color: white;
+  color: black;
   transform: translateZ(5px);
   border-radius: 5px;
 }
@@ -214,11 +214,11 @@
 .image-flip-row:nth-child(1) .image-flip-container:nth-child(1) .back {
   background: var(--flip-box-1-background-image);
   backdrop-filter: var(--backdrop-filter);
-  color: var(--flip-box-1-text);
+  color: black;
 }
 
 .image-flip-row:nth-child(1) .image-flip-container:nth-child(1) .front:hover {
-  color: aqua;
+  color: red;
 }
 
 /* Z-INDEX CHANGE ANIMATION */
@@ -258,11 +258,11 @@
 .image-flip-row:nth-child(1) .image-flip-container:nth-child(2) .front,
 .image-flip-row:nth-child(1) .image-flip-container:nth-child(2) .back {
   background: var(--flip-box-2-background-image);
-  color: var(--flip-box-2-text);
+  color: aqua;
 }
 
 .image-flip-row:nth-child(1) .image-flip-container:nth-child(2) .front:hover {
-  color: aqua;
+  color: black;
 }
 
 /* FLIP ANIMATION */
@@ -286,11 +286,11 @@
 .image-flip-row:nth-child(2) .image-flip-container:nth-child(1) .front,
 .image-flip-row:nth-child(2) .image-flip-container:nth-child(1) .back {
   background: var(--flip-box-3-background-image);
-  color: var(--flip-box-3-text);
+  color: aqua;
 }
 
 .image-flip-row:nth-child(2) .image-flip-container:nth-child(1) .front:hover {
-  color: aqua;
+  color: black;
 }
 
 .image-flip-row:nth-child(2) .image-flip-container:nth-child(1) .back {
@@ -331,11 +331,11 @@
 .image-flip-row:nth-child(2) .image-flip-container:nth-child(2) .front,
 .image-flip-row:nth-child(2) .image-flip-container:nth-child(2) .back {
   background: var(--flip-box-4-background-image);
-  color: var(--flip-box-4-text);
+  color: black;
 }
 
 .image-flip-row:nth-child(2) .image-flip-container:nth-child(2) .front:hover {
-  color: aqua;
+  color: red;
 }
 
 .image-flip-row:nth-child(2) .image-flip-container:nth-child(2) .back {

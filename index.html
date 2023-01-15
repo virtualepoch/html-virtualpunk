@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main-content.css">
     <link rel="stylesheet" href="css/image-flip.css">
-    <link rel="stylesheet" href="css/resume.css">
-    <link rel="stylesheet" href="css/urls.css">
-    <title>CK Wordpress</title>
+    <title>Virtual Punk</title>
 </head>
 
 <body>
@@ -28,15 +26,17 @@
                     <div class="logo"></div>
                     <div class="logo"></div>
                     <div class="logo"></div>
+                    <div class="logo"></div>
                 </a>
-                <h1 class="site-title">Craig Kaufman</h1>
-                <h1 class="site-title-sub">Web Developer</h1>
             </div>
+            <a href="/">
+                <h1 class="site-title">Virtual Punk</h1>
+            </a>
             <div class="side">
-                <div class="button-nav-menu" onclick="openCloseNavMenu()">
+                <button class="button-nav-menu" onclick="openCloseNavMenu()">
                     <div class="open-bars"></div>
                     <div class="close-bars"></div>
-                </div>
+                </button>
             </div>
         </div>
         <div class="nav-menu">
@@ -46,8 +46,8 @@
             <a href="/about.html" class="link">
                 <p class="link-text">About</p>
             </a>
-            <a href="/projects.html" class="link">
-                <p class="link-text">Projects</p>
+            <a href="/about.html" class="link">
+                <p class="link-text">About</p>
             </a>
             <div class="link" onclick="openCloseNavMenu(), openCloseContactOverlay()">
                 <p class="link-text">Contact</p>
@@ -59,13 +59,12 @@
         <div class="heading">
             <div class="hero-section-container">
                 <div class="hero-section">
-                    <p class="text">Craig Kaufman</p>
-                    <p class="text">Front-End Web Developer</p>
-                    <p class="text"> ...with a few <span class="word-tricks">t<span class="letter-r">r</span>icks</span>
-                        up his sleeve.</p>
-                    <p class="text">Check out his <span><a class="text-link" href="/projects.html">projects</a></span>
+                    <p class="text">Customizable Themes</p>
+                    <p class="text">Designed to...</p>
+                    <p class="text">Make your content <span class="word-tricks">P<span class="letter-r">O</span>P!</span></p>
+                    <p class="text">Check out our other themes at <span><a class="text-link" href="/projects.html">VirtualEpoch.com</a></span>
                     </p>
-                    <p class="text">or <span class="text-link button-open-contact-overlay">contact</span> for services.
+                    <p class="text">or click <span class="text-link button-open-contact-overlay">contact</span> to inquire.
                     </p>
                 </div>
             </div>
@@ -173,25 +172,6 @@
         </div>
 
         <div class="content-row-container">
-            <div class="content-row row-3">
-                <div class="column">
-                    <h2 class="content-heading">About</h2>
-                    <p class="content-content">I'm a self-taught Front-End Web Developer. For the past three years I've
-                        been avidly working to expand my web development knowledge and skills. In that time I've become
-                        very proficient with HTML, CSS, and JavaScript.
-                    </p>
-                    <p class="content-content">In my free time I like to hang out with friends and play video games.
-                        Lately I've been playing VR games. My latest favorite is the sequel to 'The Walking Dead: Saints
-                        and Sinners' which is sub-titled 'Retribution'.</p>
-                </div>
-                <div class="column">
-                    <div class="column-image"></div>
-                </div>
-            </div>
-            <div class="banner"></div>
-        </div>
-
-        <div class="content-row-container">
             <div class="content-row row-4">
                 <div class="column">
                     <h2 class="content-heading">Contact</h2>
@@ -200,9 +180,6 @@
                         open the contact sections. There you will find links to my GitHub page, LinkedIn profile, a link
                         to my email, and a link that will open my resume.
                     </p>
-                </div>
-                <div class="column">
-                    <div class="column-image"></div>
                 </div>
             </div>
         </div>
@@ -261,24 +238,6 @@
                 <div class="button-arrow-line"></div>
             </div>
         </div>
-    </div>
-
-    <div id="resume-page">
-        <div class="download-row">
-            <div class="resume-download-btn" onclick="openCloseDownloadPrompt()">
-                <div class="download-icon"></div>
-            </div>
-            <div class="resume-download-prompt">
-                <div class="btn-close-prompt" onclick="openCloseDownloadPrompt()"></div>
-                <p>Click the button below to download Craig's resume in PDF format.</p>
-                <a class="btn-download-pdf" href="/images/craig-kaufman-resume-7-2022.pdf" download
-                    onclick="openCloseDownloadPrompt()">
-                    DOWNLOAD-PDF
-                </a>
-            </div>
-            <div class="btn-close-resume" onclick="openCloseResumePage()"></div>
-        </div>
-        <img class="resume-png" src="/images/craig-kaufman-resume-7-2022.png" alt="resume" />
     </div>
 
     <script src="index.js"></script>
