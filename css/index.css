@@ -38,7 +38,7 @@ body {
 
 .main-overlay {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   z-index: 88888;
@@ -49,7 +49,7 @@ body {
   border-top: 2px solid red;
   border-bottom: 12px solid red;
   background: black;
-  transition: transform 200ms ease-in 1s;
+  transition: transform 400ms ease-in 1s;
   /* transform: translateY(-100vh); */
 }
 .main-overlay .logo-container {
@@ -70,7 +70,7 @@ body {
 }
 .main-overlay .logo:nth-child(4),
 .main-overlay .logo:nth-child(5) {
-  animation: logo-pulse-2 1s ease-in-out;
+  animation: logo-pulse-2 1.2s ease-in-out;
 }
 @keyframes logo-pulse-2 {
   50% {
