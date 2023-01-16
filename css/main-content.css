@@ -1,10 +1,14 @@
 /* ///////////////////////////////////////////////////////////// */
 /* GENERAL PAGE CONTENT /////////////////////////////////////// */
-.main-content {
+.page {
   max-width: 1200px;
-  margin: auto;
-  padding: 20px 0;
-  padding-bottom: 200px;
+  margin: 85px auto 0 auto;
+  padding: 20px;
+}
+@media (max-width: 700px) {
+  .page{
+    margin-top: 65px;
+  }
 }
 
 /* ////////////////////////////////////////////////////////// */

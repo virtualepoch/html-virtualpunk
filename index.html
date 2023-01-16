@@ -16,46 +16,79 @@
 </head>
 
 <body>
-
-    <div class="landing-background"></div>
-
-    <header>
-        <div class="top-header">
-            <div class="side">
-                <a href="/" class="logo-container">
-                    <div class="logo"></div>
-                    <div class="logo"></div>
+        <!-- GLOBAL SCOPED SITE ELEMENTS (WITH FIXED POSITION) -->
+        <header>
+            <div class="top-header">
+                <div class="side">
+                    <a href="/" class="logo-container">
+                        <div class="logo"></div>
+                        <div class="logo"></div>
+                    </a>
+                </div>
+                <a class="site-title-container" href="/">
+                    <div class="title-border"></div>
+                    <h1 class="site-title">Virtual Punk</h1>
+                    <div class="title-border"></div>
                 </a>
+                <div class="side">
+                    <button class="button-nav-menu" onclick="openCloseNavMenu()">
+                        <div class="open-bars"></div>
+                        <div class="close-bars"></div>
+                    </button>
+                </div>
             </div>
-            <a class="site-title-container" href="/">
-                <div class="title-border"></div>
-                <h1 class="site-title">Virtual Punk</h1>
-                <div class="title-border"></div>
-            </a>
-            <div class="side">
-                <button class="button-nav-menu" onclick="openCloseNavMenu()">
-                    <div class="open-bars"></div>
-                    <div class="close-bars"></div>
-                </button>
+            <div class="nav-menu">
+                <a href="/" class="link active">
+                    <p class="link-text">Home</p>
+                </a>
+                <a href="/about.html" class="link">
+                    <p class="link-text">About</p>
+                </a>
+                <a href="/about.html" class="link">
+                    <p class="link-text">About</p>
+                </a>
+                <div class="link" onclick="openCloseNavMenu(), openCloseContactOverlay()">
+                    <p class="link-text">Contact</p>
+                </div>
             </div>
-        </div>
-        <div class="nav-menu">
-            <a href="/" class="link active">
-                <p class="link-text">Home</p>
-            </a>
-            <a href="/about.html" class="link">
-                <p class="link-text">About</p>
-            </a>
-            <a href="/about.html" class="link">
-                <p class="link-text">About</p>
-            </a>
-            <div class="link" onclick="openCloseNavMenu(), openCloseContactOverlay()">
-                <p class="link-text">Contact</p>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="main-content">
+        <div class="main-overlay"></div>
+    
+        <div class="contact-overlay-container">
+            <div class="contact-overlay">
+                <div class="button-close-contact-overlay-container">
+                    <div class="button-close-contact-overlay" onclick="openCloseContactOverlay()">
+                        <div class="button-bars"></div>
+                    </div>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact">
+                        <div class="button-row">
+                            <a href="https://github.com/virtualepoch" target="_blank"
+                                class="social-link github"></a>
+                            <a href="https://www.linkedin.com/in/craig-kaufman/" target="_blank"
+                                class="social-link linkedin"></a>
+    
+                        </div>
+                        <div class="button-row">
+                            <a href="mailto:cdk11235@gmail.com" target="_blank" class="social-link email"></a>
+                            <div href="#resume" class="social-link resume" onclick="openCloseResumePage()"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-close-contact-overlay-arrow" onclick="openCloseContactOverlay()">
+                    <div class="button-arrow-line"></div>
+                    <div class="button-arrow-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-to-top" onclick="scrollToTop()">
+            <div class="button-to-top-bars"></div>
+        </div>
+
+        <section class="page">
         <div class="heading">
             <div class="hero-section-container">
                 <div class="hero-section">
@@ -69,61 +102,6 @@
                     <p class="text">or click <span class="text-link button-open-contact-overlay">contact</span> to
                         inquire.
                     </p>
-                </div>
-            </div>
-
-            <div class="image-flip-section">
-                <div class="image-flip-row">
-                    <div class="image-flip-container one" onclick="openCloseContactOverlay()">
-                        <div class="image-flip-contact-arrow">
-                            <div class="arrow-line"></div>
-                            <div class="arrow-line"></div>
-                        </div>
-                        <div class="image-flip">
-                            <div class="side front">Contact</div>
-                            <div class="side back">Contact</div>
-                            <div class="side left"></div>
-                            <div class="side right"></div>
-                            <div class="side top"></div>
-                            <div class="side bottom"></div>
-                        </div>
-                    </div>
-                    <a href="/projects.html" class="image-flip-container two">
-                        <div class="image-flip-contact-arrow">
-                            <div class="arrow-line"></div>
-                            <div class="arrow-line"></div>
-                        </div>
-                        <div class="image-flip">
-                            <div class="side front">Projects</div>
-                            <div class="side back">Projects</div>
-                            <div class="side left"></div>
-                            <div class="side right"></div>
-                            <div class="side top"></div>
-                            <div class="side bottom"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="image-flip-row">
-                    <a href="/about.html" class="image-flip-container three">
-                        <div class="image-flip">
-                            <div class="side front">About</div>
-                            <div class="side back">About</div>
-                            <div class="side left"></div>
-                            <div class="side right"></div>
-                            <div class="side top"></div>
-                            <div class="side bottom"></div>
-                        </div>
-                    </a>
-                    <div class="image-flip-container four button-open-contact-overlay">
-                        <div class="image-flip">
-                            <div class="side front">Contact</div>
-                            <div class="side back">Contact</div>
-                            <div class="side left"></div>
-                            <div class="side right"></div>
-                            <div class="side top"></div>
-                            <div class="side bottom"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -143,8 +121,6 @@
                             <div class="responsive-image"></div>
                             <div class="responsive-phone"></div>
                         </div>
-                        <a class="button-link-project" href="https://www.javascriptive.com/"
-                            title="https://www.javascriptive.com/" target="_blank" rel="noopener noreferrer">VISIT</a>
                     </div>
                 </div>
             </div>
@@ -153,95 +129,32 @@
 
         <div class="content-row-container">
             <div class="content-row row-2">
+                <div class="column"></div>
                 <div class="column">
-                    <div class="responsive-project">
-                        <div class="responsive-computer">
-                            <div class="responsive-image"></div>
-                            <div class="responsive-phone"></div>
-                        </div>
-                        <a class="button-link-project" href="https://www.virtualepoch.com/"
-                            title="https://www.virtualepoch.com/" target="_blank" rel="noopener noreferrer">VISIT</a>
-                    </div>
-                </div>
-                <div class="column">
-                    <h2 class="content-heading">Featured Project - VirtualEpoch.com</h2>
-                    <p class="content-content">This is a mockup for a Web Development Company I've title Virtual Epoch.
-                        It was created again using React.js. It contains html canvas elements with a cool matrix rain
-                        effect that is run by JavaScript.
-                    </p>
+                    <h2 class="content-heading"></h2>
+                    <p class="content-content"></p>
                 </div>
             </div>
             <div class="banner"></div>
         </div>
-
-        <div class="content-row-container">
-            <div class="content-row row-4">
-                <div class="column">
-                    <h2 class="content-heading">Contact</h2>
-                    <p class="content-content">To contact me with any inquiries, questions, or (hopefully) job offers
-                        you can scroll down to the contact section or press the contact link in the navigation menu to
-                        open the contact sections. There you will find links to my GitHub page, LinkedIn profile, a link
-                        to my email, and a link that will open my resume.
-                    </p>
-                </div>
-            </div>
-        </div>
     </section>
-
-    <div class="footer-background"></div>
 
     <footer>
         <div class="contact-overlay footer">
             <div class="contact-wrapper">
                 <div class="contact">
                     <div class="button-row">
-                        <a href="https://github.com/virtualepoch" target="_blank"
-                            class="button-contact-link github"></a>
-                        <a href="https://www.linkedin.com/in/craig-kaufman/" target="_blank"
-                            class="button-contact-link linkedin"></a>
+                        <a href="/" target="_blank" class="social-link facebook"></a>
+                        <a href="/" target="_blank" class="social-link twitter"></a>
                     </div>
                     <div class="button-row">
-                        <a href="mailto:cdk11235@gmail.com" target="_blank" class="button-contact-link email"></a>
-                        <div href="#resume" class="button-contact-link resume" onclick="openCloseResumePage()"></div>
+                        <a href="/" target="_blank" class="social-link snapchat"></a>
+                        <div href="/" target="_blank" class="social-link instagram"></div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- GLOBAL SCOPED SITE ELEMENTS (WITH FIXED POSITION)/////////////////////////////////////////////////// -->
-    <div class="button-to-top" onclick="scrollToTop()">
-        <div class="button-to-top-bars"></div>
-    </div>
-
-    <div class="contact-overlay-container">
-        <div class="contact-overlay">
-            <div class="button-close-contact-overlay-container">
-                <div class="button-close-contact-overlay" onclick="openCloseContactOverlay()">
-                    <div class="button-bars"></div>
-                </div>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact">
-                    <div class="button-row">
-                        <a href="https://github.com/virtualepoch" target="_blank"
-                            class="button-contact-link github"></a>
-                        <a href="https://www.linkedin.com/in/craig-kaufman/" target="_blank"
-                            class="button-contact-link linkedin"></a>
-
-                    </div>
-                    <div class="button-row">
-                        <a href="mailto:cdk11235@gmail.com" target="_blank" class="button-contact-link email"></a>
-                        <div href="#resume" class="button-contact-link resume" onclick="openCloseResumePage()"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="button-close-contact-overlay-arrow" onclick="openCloseContactOverlay()">
-                <div class="button-arrow-line"></div>
-                <div class="button-arrow-line"></div>
-            </div>
-        </div>
-    </div>
 
     <script src="index.js"></script>
 </body>
