@@ -75,12 +75,18 @@ for (let i = 0; i < contactBtns.length; i++) {
 }
 
 ///////////////////////////////////////////////////////////////////
-// SWIPE EVENTS //////////////////////////////////////////////////
+// ONLOAD EVENTS //////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
 window.addEventListener(
   "load",
   function () {
+
+    // CLOSE MAIN OVERLAY
+    const mainOverlay = this.document.querySelector(".main-overlay");
+    mainOverlay.style.transform = "translateY(-100vh)";
+
+    // SWIPE EVENT
     var touchSurface = document.querySelector(".contact-overlay-container"),
       startX,
       startY,
@@ -131,4 +137,3 @@ window.addEventListener(
   },
   false
 ); // end window.onload
-

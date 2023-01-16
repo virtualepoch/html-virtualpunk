@@ -16,82 +16,89 @@
 </head>
 
 <body>
-        <!-- GLOBAL SCOPED SITE ELEMENTS (WITH FIXED POSITION) -->
-        <header>
-            <div class="top-header">
-                <div class="side">
-                    <a href="/" class="logo-container">
-                        <div class="logo"></div>
-                        <div class="logo"></div>
-                        <div class="logo"></div>
-                        <div class="logo"></div>
-                        <div class="logo"></div>
-                    </a>
-                </div>
-                <a class="site-title-container" href="/">
-                    <div class="title-border"></div>
-                    <h1 class="site-title">Virtual <span class="site-title-word">Punk</span></h1>
-                    <div class="title-border"></div>
+    <!-- GLOBAL SCOPED SITE ELEMENTS (WITH FIXED POSITION) -->
+    <header>
+        <div class="top-header">
+            <div class="side">
+                <a href="/" class="logo-container">
+                    <div class="logo"></div>
+                    <div class="logo"></div>
+                    <div class="logo"></div>
+                    <div class="logo"></div>
+                    <div class="logo"></div>
                 </a>
-                <div class="side">
-                    <button class="button-nav-menu" onclick="openCloseNavMenu()">
-                        <div class="open-bars"></div>
-                        <div class="close-bars"></div>
-                    </button>
-                </div>
             </div>
-            <div class="nav-menu">
-                <a href="/" class="link active">
-                    <p class="link-text">Home</p>
-                </a>
-                <a href="/about.html" class="link">
-                    <p class="link-text">About</p>
-                </a>
-                <a href="/about.html" class="link">
-                    <p class="link-text">About</p>
-                </a>
-                <div class="link" onclick="openCloseNavMenu(), openCloseContactOverlay()">
-                    <p class="link-text">Contact</p>
-                </div>
-            </div>
-        </header>
-
-        <div class="main-overlay"></div>
-    
-        <div class="contact-overlay-container">
-            <div class="contact-overlay">
-                <div class="button-close-contact-overlay-container">
-                    <div class="button-close-contact-overlay" onclick="openCloseContactOverlay()">
-                        <div class="button-bars"></div>
-                    </div>
-                </div>
-                <div class="contact-wrapper">
-                    <div class="contact">
-                        <div class="button-row">
-                            <a href="https://github.com/virtualepoch" target="_blank"
-                                class="social-link github"></a>
-                            <a href="https://www.linkedin.com/in/craig-kaufman/" target="_blank"
-                                class="social-link linkedin"></a>
-    
-                        </div>
-                        <div class="button-row">
-                            <a href="mailto:cdk11235@gmail.com" target="_blank" class="social-link email"></a>
-                            <div href="#resume" class="social-link resume" onclick="openCloseResumePage()"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="button-close-contact-overlay-arrow" onclick="openCloseContactOverlay()">
-                    <div class="button-arrow-line"></div>
-                    <div class="button-arrow-line"></div>
-                </div>
+            <a class="site-title-container" href="/">
+                <div class="title-border"></div>
+                <h1 class="site-title">Virtual <span class="site-title-word">Punk</span></h1>
+                <div class="title-border"></div>
+            </a>
+            <div class="side">
+                <button class="button-nav-menu" onclick="openCloseNavMenu()">
+                    <div class="open-bars"></div>
+                    <div class="close-bars"></div>
+                </button>
             </div>
         </div>
-
-        <div class="button-to-top" onclick="scrollToTop()">
-            <div class="button-to-top-bars"></div>
+        <div class="nav-menu">
+            <a href="/" class="link active">
+                <p class="link-text">Home</p>
+            </a>
+            <a href="/about.html" class="link">
+                <p class="link-text">About</p>
+            </a>
+            <a href="/about.html" class="link">
+                <p class="link-text">About</p>
+            </a>
+            <div class="link" onclick="openCloseNavMenu(), openCloseContactOverlay()">
+                <p class="link-text">Contact</p>
+            </div>
         </div>
+    </header>
 
-        <section class="page">
+    <div class="main-overlay">
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+        </div>
+    </div>
+
+    <div class="contact-overlay-container">
+        <div class="contact-overlay">
+            <div class="button-close-contact-overlay-container">
+                <div class="button-close-contact-overlay" onclick="openCloseContactOverlay()">
+                    <div class="button-bars"></div>
+                </div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact">
+                    <div class="button-row">
+                        <a href="https://github.com/virtualepoch" target="_blank" class="social-link github"></a>
+                        <a href="https://www.linkedin.com/in/craig-kaufman/" target="_blank"
+                            class="social-link linkedin"></a>
+
+                    </div>
+                    <div class="button-row">
+                        <a href="mailto:cdk11235@gmail.com" target="_blank" class="social-link email"></a>
+                        <div href="#resume" class="social-link resume" onclick="openCloseResumePage()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-close-contact-overlay-arrow" onclick="openCloseContactOverlay()">
+                <div class="button-arrow-line"></div>
+                <div class="button-arrow-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-to-top" onclick="scrollToTop()">
+        <div class="button-to-top-bars"></div>
+    </div>
+
+    <section class="page">
         <div class="heading">
             <div class="hero-section-container">
                 <div class="hero-section">

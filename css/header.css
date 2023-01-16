@@ -39,7 +39,7 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 5px;
+  gap: 9%;
   position: relative;
 }
 
@@ -50,16 +50,19 @@ header {
 }
 
 .logo {
-  height: 21px;
-  width: 3px;
+  height: 50%;
+  width: 7%;
   transform-origin: 50% 100%;
   background: aqua;
   filter: drop-shadow(0 0 4px aqua);
-  animation: logo-anim 3s linear;
+  animation: logo-anim 3s linear 1.2s;
 }
 .logo:nth-child(2),
 .logo:nth-child(4) {
-  height: 36px;
+  height: 100%;
+}
+.logo:nth-child(3) {
+  margin-right: 5%;
 }
 .logo:nth-child(4),
 .logo:nth-child(5) {
@@ -71,15 +74,16 @@ header {
     height: 0;
   }
 }
-.logo:nth-child(even) {
-  animation: logo-anim-2 3s linear;
+.logo:nth-child(2),
+.logo:nth-child(4) {
+  animation: logo-anim-2 3s linear 1.2s;
 }
 @keyframes logo-anim-2 {
   20% {
     height: 0;
   }
   50% {
-    height: 21px;
+    height: 50%;
   }
   70% {
     height: 0;

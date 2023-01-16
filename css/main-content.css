@@ -6,7 +6,7 @@
   padding: 20px;
 }
 @media (max-width: 700px) {
-  .page{
+  .page {
     margin-top: 65px;
   }
 }
@@ -60,17 +60,17 @@
   opacity: 0;
 }
 :root {
-  --hero-section-anim-duration: 15s;
+  --hero-section-anim-duration: 20s;
 }
 .hero-section .text:nth-child(1) {
   animation: hero-anim-1 var(--hero-section-anim-duration) ease infinite;
 }
 @keyframes hero-anim-1 {
-  15% {
+  20% {
     transform: scale(1);
     opacity: 1;
   }
-  20% {
+  25% {
     transform: scale(1);
     opacity: 0;
   }
