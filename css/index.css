@@ -257,7 +257,8 @@ body {
 .button-to-top {
   width: 80px;
   height: 50px;
-  border-top: 1px solid aqua;
+  border: 1px solid red;
+  border-bottom: none;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -267,13 +268,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: bottom 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
   cursor: pointer;
   transform: translateY(60px);
 }
 
 .button-to-top:hover {
-  background: rgb(116, 210, 212, 0.7);
+  background: rgb(37, 37, 37);
 }
 
 .button-to-top.open {
@@ -281,10 +282,9 @@ body {
 }
 
 .button-to-top-bars {
-  width: 38px;
-  height: 2px;
+  width: 40%;
+  height: 7%;
   position: relative;
-  top: -5px;
 }
 
 .button-to-top-bars::before,
@@ -298,13 +298,11 @@ body {
 }
 
 .button-to-top-bars::before {
-  left: -15px;
-  transform: rotate(-35deg);
+  transform: translateX(-38%) rotate(-35deg);
 }
 
 .button-to-top-bars::after {
-  left: 15px;
-  transform: rotate(35deg);
+  transform: translateX(39%) rotate(35deg);
 }
 
 @media (max-width: 700px) {
@@ -314,20 +312,5 @@ body {
   }
   .button-to-top:hover {
     background: none;
-  }
-  .button-to-top-bars {
-    width: 18px;
-    height: 2px;
-    position: relative;
-    top: -5px;
-  }
-  .button-to-top-bars::before {
-    left: -7px;
-    transform: rotate(-35deg);
-  }
-
-  .button-to-top-bars::after {
-    left: 7px;
-    transform: rotate(35deg);
   }
 }
