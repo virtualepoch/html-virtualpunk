@@ -4,6 +4,7 @@
   max-width: 1200px;
   margin: 85px auto 0 auto;
   padding: 20px;
+  border: 1px solid red;
 }
 @media (max-width: 700px) {
   .page {
@@ -14,11 +15,15 @@
 /* ////////////////////////////////////////////////////////// */
 /* MAIN PAGE CONTENT /////////////////////////////////////// */
 .heading {
+  padding: 20px 0;
   margin: 100px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  border: 1px solid aqua;
+  border-left: none;
+  border-right: none;
 }
 
 @media (max-width: 700px) {
@@ -33,13 +38,15 @@
   height: 100%;
   min-height: 300px;
   color: red;
-  font: 500 50px Raleway;
+  font: 500 50px Ailerons;
   filter: drop-shadow(0 0 5px red);
   padding: 20px;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  border: 1px solid red;
 }
 @media (max-width: 700px) {
   .hero-section-container {
@@ -49,14 +56,12 @@
 
 .hero-section {
   position: relative;
-  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .hero-section .text {
   position: absolute;
-  transform: scale(0);
   opacity: 0;
 }
 :root {
@@ -66,81 +71,157 @@
   animation: hero-anim-1 var(--hero-section-anim-duration) ease infinite;
 }
 @keyframes hero-anim-1 {
-  20% {
-    transform: scale(1);
+  0% {
     opacity: 1;
   }
-  25% {
-    transform: scale(1);
+  18% {
+    color: red;
+    opacity: 1;
+  }
+  18.5% {
+    color: aqua;
     opacity: 0;
+    letter-spacing: inherit;
+  }
+  19% {
+    opacity: 1;
+    letter-spacing: 50px;
+  }
+  19.5% {
+    opacity: 0;
+    letter-spacing: 0;
+  }
+  20% {
+    opacity: 0;
+    letter-spacing: 50px;
   }
 }
 .hero-section .text:nth-child(2) {
   animation: hero-anim-2 var(--hero-section-anim-duration) ease infinite;
 }
 @keyframes hero-anim-2 {
-  15% {
-    transform: scale(0);
+  18% {
     opacity: 0;
   }
-  35% {
-    transform: scale(1);
+  20% {
     opacity: 1;
   }
-  40% {
-    transform: scale(1);
+  38% {
+    color: red;
+    opacity: 1;
+  }
+  38.5% {
+    color: aqua;
     opacity: 0;
+    letter-spacing: inherit;
+  }
+  39% {
+    opacity: 1;
+    letter-spacing: 50px;
+  }
+  39.5% {
+    opacity: 0;
+    letter-spacing: 0;
+  }
+  40% {
+    opacity: 0;
+    letter-spacing: 50px;
   }
 }
 .hero-section .text:nth-child(3) {
   animation: hero-anim-3 var(--hero-section-anim-duration) ease infinite;
 }
 @keyframes hero-anim-3 {
-  30% {
-    transform: scale(0);
+  38% {
     opacity: 0;
   }
-  55% {
-    transform: scale(1);
+  40% {
     opacity: 1;
   }
-  60% {
-    transform: scale(1);
+  58% {
+    color: red;
+    opacity: 1;
+  }
+  58.5% {
+    color: aqua;
     opacity: 0;
+    letter-spacing: inherit;
+  }
+  59% {
+    opacity: 1;
+    letter-spacing: 50px;
+  }
+  59.5% {
+    opacity: 0;
+    letter-spacing: 0;
+  }
+  60% {
+    opacity: 0;
+    letter-spacing: 50px;
   }
 }
 .hero-section .text:nth-child(4) {
   animation: hero-anim-4 var(--hero-section-anim-duration) ease infinite;
 }
 @keyframes hero-anim-4 {
-  55% {
-    transform: scale(0);
+  58% {
     opacity: 0;
   }
-  75% {
-    transform: scale(1);
+  60% {
     opacity: 1;
   }
-  80% {
-    transform: scale(1);
+  78% {
+    color: red;
+    opacity: 1;
+  }
+  78.5% {
+    color: aqua;
     opacity: 0;
+    letter-spacing: inherit;
+  }
+  79% {
+    opacity: 1;
+    letter-spacing: 50px;
+  }
+  79.5% {
+    opacity: 0;
+    letter-spacing: 0;
+  }
+  80% {
+    opacity: 0;
+    letter-spacing: 50px;
   }
 }
 .hero-section .text:nth-child(5) {
   animation: hero-anim-5 var(--hero-section-anim-duration) ease infinite;
 }
 @keyframes hero-anim-5 {
-  75% {
-    transform: scale(0);
+  78% {
     opacity: 0;
   }
-  95% {
-    transform: scale(1);
+  80% {
     opacity: 1;
   }
-  100% {
-    transform: scale(1);
+  98% {
+    color: red;
+    opacity: 1;
+  }
+  98.5% {
+    color: aqua;
     opacity: 0;
+    letter-spacing: inherit;
+  }
+  99% {
+    opacity: 1;
+    letter-spacing: 50px;
+  }
+  99.5% {
+    opacity: 0;
+    letter-spacing: 0;
+  }
+  100% {
+    opacity: 0;
+    letter-spacing: 50px;
   }
 }
 /* ////////////////////////////////////////////////////////// */
@@ -152,7 +233,6 @@
 
 @keyframes heading-scale {
   50% {
-    transform: scale(1.2);
   }
 }
 /* /////////////////////////////////////////////////////////////// */

@@ -153,7 +153,6 @@ header {
 .open-bars::after {
   width: 30px;
   height: 3px;
-  border-radius: 3px;
   position: absolute;
   left: 0;
   right: 0;
@@ -183,7 +182,6 @@ header {
 .close-bars::after {
   width: 0px;
   height: 3px;
-  border-radius: 3px;
   position: absolute;
   left: 0;
   right: 0;
