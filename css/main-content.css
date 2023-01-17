@@ -280,6 +280,7 @@
 .content-row-container {
   margin: 50px auto;
   padding: 20px 0;
+  overflow: hidden;
   border-top: 1px solid aqua;
   border-bottom: 1px solid aqua;
 }
