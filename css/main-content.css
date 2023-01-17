@@ -258,11 +258,6 @@
 .projects-text {
   animation: heading-scale 18s ease-in-out infinite;
 }
-
-@keyframes heading-scale {
-  50% {
-  }
-}
 /* /////////////////////////////////////////////////////////////// */
 .word-pop {
   color: white;
