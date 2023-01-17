@@ -87,6 +87,7 @@ body {
   perspective: 600px;
   perspective-origin: 50%;
   border: 10px solid yellow;
+  display: none;
 }
 .underlay-effect {
   width: 100%;
