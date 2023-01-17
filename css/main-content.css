@@ -47,6 +47,7 @@
   justify-content: center;
   text-align: center;
   border: 1px solid red;
+  overflow: hidden;
 }
 @media (max-width: 700px) {
   .hero-section-container {
