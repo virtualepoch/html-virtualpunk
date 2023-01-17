@@ -126,10 +126,13 @@ body {
     backdrop-filter: none;
   }
 }
+.button-aid-container {
+  padding: 30px;
+}
 
 button.close-contact-overlay {
-  min-width: 60px;
-  min-height: 60px;
+  min-width: 50px;
+  min-height: 50px;
   border: 1px solid red;
   background: inherit;
   display: flex;
@@ -139,6 +142,10 @@ button.close-contact-overlay {
   cursor: pointer;
   box-shadow: inset 0 0 5px 1px red;
   clip-path: polygon(25% 0, 30% 5%, 70% 5%, 75% 0, 100% 0, 100% 100%, 75% 100%, 70% 95%, 30% 95%, 25% 100%, 0 100%, 0 0);
+  transition: transform 500ms ease-in-out;
+}
+.button-aid-container:hover button.close-contact-overlay {
+  transform: scale(1.1);
 }
 
 button.close-contact-overlay .button-bars {
@@ -154,9 +161,13 @@ button.close-contact-overlay .button-bars::after {
   content: "";
   width: 100%;
   height: 100%;
-  background: red;
+  background: aqua;
   position: absolute;
   transform: rotate(45deg);
+}
+button.close-contact-overlay:hover .button-bars::before,
+button.close-contact-overlay:hover .button-bars::after {
+  background: red;
 }
 
 button.close-contact-overlay .button-bars::after {
@@ -234,29 +245,32 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
   width: 60px;
   height: 60px;
   border: 1px solid red;
-  background: none center / 60% no-repeat;
+  background: none center / 35% no-repeat;
   box-shadow: 0 0 4px 1px red, inset 0 0 4px 1px red;
+  filter: drop-shadow(0 0 4px red);
   margin: 20px;
   cursor: pointer;
-  -webkit-tap-highlight-color: white;
+  -webkit-tap-highlight-color: aqua;
+}
+.social-link:hover {
+  border-color: aqua;
+  background-size: 40%;
+  box-shadow: 0 0 4px 1px aqua, inset 0 0 4px 1px aqua;
 }
 .social-link.facebook {
-  background-image: url(/assets/icons/facebook-square.svg);
+  background-image: url(/assets/icons/facebook.svg);
 }
 .social-link.twitter {
   background-image: url(/assets/icons/twitter.svg);
-  filter: drop-shadow(0 0 4px red);
 }
 .social-link.youtube {
   background-image: url(/assets/icons/youtube.svg);
-  border-color: aqua;
-  box-shadow: 0 0 4px 1px aqua, inset 0 0 4px 1px aqua;
+}
+.social-link.youtube:hover {
+  background-image: url(/assets/icons/youtube-red.svg);
 }
 .social-link.email {
   background-image: url(/assets/icons/envelope-solid.svg);
-  border-color: aqua;
-  box-shadow: 0 0 2px 0.5px aqua, inset 0 0 2px 0.5px aqua;
-  filter: drop-shadow(0 0 3px aqua);
 }
 
 /* ///////////////////////////////////////////////////////////// */

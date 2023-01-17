@@ -5,6 +5,7 @@
   margin: 85px auto 0 auto;
   padding: 20px;
   border: 1px solid red;
+  border-top: 1px solid aqua;
 }
 @media (max-width: 700px) {
   .page {
@@ -28,7 +29,7 @@
 
 @media (max-width: 700px) {
   .heading {
-    margin: 10px auto;
+    margin: 50px auto;
   }
 }
 
