@@ -140,6 +140,35 @@ body {
     transform: none;
   }
 }
+.wires {
+  height: 100%;
+  width: 900px;
+  border-top: 1px solid aqua;
+  border-bottom: 1px solid aqua;
+  box-shadow: 0 0 3px 1px aqua, inset 0 0 3px 1px aqua;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 0;
+  transform: rotateY(90deg) translateX(-900px);
+  animation: wires-anim 1s ease-in-out;
+  animation-delay: 1.5s;
+  background: linear-gradient(transparent 49%, aqua);
+}
+@keyframes wires-anim {
+  0% {
+    transform: rotateY(90deg) translateX(-900px);
+  }
+  100% {
+    transform: rotateY(90deg) translateX(0);
+  }
+}
+.wires.right {
+  left: 100%;
+}
+.wire-frame-container.open .wires {
+  transition: transform 0s 2.5s;
+  transform: rotateY(90deg) translateX(0);
+}
 
 /* CONTACT OVERLAY / FOOTER /////////////////////////////////// */
 .contact-overlay-container {
