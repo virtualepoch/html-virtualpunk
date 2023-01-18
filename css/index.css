@@ -102,27 +102,27 @@ body {
   box-shadow: 0 0 5px 1px aqua, inset 0 0 5px 1px aqua;
 }
 .effect-box:nth-child(1) {
-  transition: transform 500ms ease-in-out 2s;
+  transition: transform 500ms ease-in-out 2.5s;
   transform: translateZ(-150px);
 }
 .effect-box:nth-child(2) {
-  transition: transform 500ms ease-in-out 1.8s;
+  transition: transform 500ms ease-in-out 2.3s;
   transform: translateZ(-300px);
 }
 .effect-box:nth-child(3) {
-  transition: transform 500ms ease-in-out 1.6s;
+  transition: transform 500ms ease-in-out 2.1s;
   transform: translateZ(-450px);
 }
 .effect-box:nth-child(4) {
-  transition: transform 500ms ease-in-out 1.4s;
+  transition: transform 500ms ease-in-out 1.9s;
   transform: translateZ(-600px);
 }
 .effect-box:nth-child(5) {
-  transition: transform 500ms ease-in-out 1.2s;
+  transition: transform 500ms ease-in-out 1.7s;
   transform: translateZ(-750px);
 }
 .effect-box:nth-child(6) {
-  transition: transform 500ms ease-in-out 1s;
+  transition: transform 500ms ease-in-out 1.5s;
   transform: translateZ(-900px);
 }
 
