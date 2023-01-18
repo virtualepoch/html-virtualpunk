@@ -201,15 +201,14 @@ header {
   width: 30px;
 }
 
-/* NAVIGATION MENU */
+/* NAVIGATION MENU //////////////////////////////*/
 .nav-menu {
   width: calc(100% - 40px);
   max-width: 1200px;
   height: calc(100% - 120px);
-  border: solid aqua;
-  border-radius: 5px;
-  background: rgb(0, 0, 0);
-  box-shadow: inset 0 0 10px 2px aqua;
+  border: 1px solid red;
+  background: rgb(37, 37, 37);
+  box-shadow: 0 0 5px 2px red;
   position: fixed;
   top: 100px;
   left: 0;
@@ -237,7 +236,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: solid greenyellow;
+  border: 1px solid greenyellow;
+  box-shadow: inset 0 0 15px 1px greenyellow;
   position: relative;
   overflow: visible;
 }
