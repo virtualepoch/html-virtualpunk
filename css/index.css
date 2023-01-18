@@ -49,7 +49,7 @@ body {
   border-top: 2px solid red;
   border-bottom: 12px solid red;
   background: black;
-  transition: transform 400ms ease-in 1s;
+  transition: transform 500ms ease-in 1s;
 }
 .main-overlay .logo-container {
   width: 200px;
@@ -105,24 +105,40 @@ body {
   transform: translateZ(-150px);
 }
 .wire-frame-container.open .wire-frame:nth-child(2) {
-  transition: transform 500ms ease-in-out 2.8s;
+  transition: transform 600ms ease-in-out 2.7s;
   transform: translateZ(-300px);
 }
 .wire-frame-container.open .wire-frame:nth-child(3) {
-  transition: transform 500ms ease-in-out 2.6s;
+  transition: transform 700ms ease-in-out 2.4s;
   transform: translateZ(-450px);
 }
 .wire-frame-container.open .wire-frame:nth-child(4) {
-  transition: transform 500ms ease-in-out 2.4s;
+  transition: transform 800ms ease-in-out 2.1s;
   transform: translateZ(-600px);
 }
 .wire-frame-container.open .wire-frame:nth-child(5) {
-  transition: transform 500ms ease-in-out 2.2s;
+  transition: transform 900ms ease-in-out 1.8s;
   transform: translateZ(-750px);
 }
 .wire-frame-container.open .wire-frame:nth-child(6) {
-  transition: transform 500ms ease-in-out 2s;
+  transition: transform 1000ms ease-in-out 1.5s;
   transform: translateZ(-900px);
+}
+.wire-frame-container.open .wire-frame:nth-child(7) {
+  transition: transform 1000ms ease-in-out 1.5s;
+  transform: translateZ(-900px);
+}
+.wire-frame:nth-child(7) {
+  animation: wire-frame-anim 10s ease-in-out infinite;
+  animation-delay: 5s;
+}
+@keyframes wire-frame-anim {
+  3% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
 }
 
 /* CONTACT OVERLAY / FOOTER /////////////////////////////////// */
