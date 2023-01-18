@@ -81,10 +81,13 @@ for (let i = 0; i < contactBtns.length; i++) {
 window.addEventListener(
   "load",
   function () {
-
     // CLOSE MAIN OVERLAY
     const mainOverlay = this.document.querySelector(".main-overlay");
     mainOverlay.style.transform = "translateY(-100vh)";
+
+    // WIRE BOX ANIMATION
+    const wireFrame = this.document.querySelector(".wire-frame-container");
+    wireFrame.classList.add("open");
 
     // SWIPE EVENT
     var touchSurface = document.querySelector(".contact-overlay-container"),
