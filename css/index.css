@@ -129,7 +129,7 @@ body {
   transform: translateZ(-900px);
 }
 .wire-frame:nth-child(7) {
-  animation: wire-frame-anim 10s ease-in-out infinite;
+  animation: wire-frame-anim 8s ease-in-out infinite;
   animation-delay: 5s;
 }
 @keyframes wire-frame-anim {
@@ -152,7 +152,7 @@ body {
   transform: rotateY(90deg) translateX(-900px);
   animation: wires-anim 1s ease-in-out;
   animation-delay: 1.5s;
-  background: linear-gradient(transparent 49%, aqua);
+  background: linear-gradient(transparent calc(20% - 2px), aqua calc(20% - 0.5px) calc(20% + 0.5px), transparent calc(20% + 2px), transparent calc(40% - 2px), aqua calc(40% - 0.5px) calc(40% + 0.5px), transparent calc(40% + 2px), transparent calc(60% - 2px), aqua calc(60% - 0.5px) calc(60% + 0.5px), transparent calc(60% + 2px), transparent calc(80% - 2px), aqua calc(80% - 0.5px) calc(80% + 0.5px), transparent calc(80% + 2px));
 }
 @keyframes wires-anim {
   0% {
