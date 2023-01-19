@@ -196,9 +196,9 @@ body {
   transform: rotateY(0) rotateX(-90deg) translateY(0);
 }
 @media (max-width: 700px) {
-  .wire-frame-container {
+  /* .wire-frame-container {
     height: calc(100% - 60px);
-  }
+  } */
   .wire-frame {
     box-shadow: none;
   }
