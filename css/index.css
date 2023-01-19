@@ -79,9 +79,9 @@ body {
 
 .underlay-container {
   width: 100%;
-  height: calc(100% - 70px);
+  height: calc(100% - 90px);
   position: fixed;
-  top: 70px;
+  top: 90px;
   z-index: -1;
   perspective: 600px;
   perspective-origin: 50%;
@@ -196,7 +196,21 @@ body {
   transition: transform 0s 2.5s;
   transform: rotateY(0) rotateX(-90deg) translateY(0);
 }
-
+@media (max-width: 700px) {
+  .underlay-container {
+    height: calc(100% - 70px);
+    top: 70px;
+  }
+  .wire-frame-container {
+    box-shadow: none;
+  }
+  .wire-frame {
+    box-shadow: none;
+  }
+  .wires {
+    background: linear-gradient(transparent calc(20% - 0.5px), aqua calc(20% - 0.5px) calc(20% + 0.5px), transparent calc(20% + 0.5px), transparent calc(40% - 0.5px), aqua calc(40% - 0.5px) calc(40% + 0.5px), transparent calc(40% + 0.5px), transparent calc(60% - 0.5px), aqua calc(60% - 0.5px) calc(60% + 0.5px), transparent calc(60% + 0.5px), transparent calc(80% - 0.5px), aqua calc(80% - 0.5px) calc(80% + 0.5px), transparent calc(80% + 0.5px));
+  }
+}
 /* CONTACT OVERLAY / FOOTER /////////////////////////////////// */
 .contact-overlay-container {
   width: calc(100% - 40px);
