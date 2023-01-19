@@ -188,7 +188,6 @@ body {
     transform: rotateY(0) rotateX(-90deg) translateY(0);
   }
 }
-
 .wire-frame-container.open .wires.top,
 .wire-frame-container.open .wires.bottom {
   transition: transform 0s 2.5s;
@@ -202,14 +201,14 @@ body {
     background: linear-gradient(transparent calc(20% - 0.5px), aqua calc(20% - 0.5px) calc(20% + 0.5px), transparent calc(20% + 0.5px), transparent calc(40% - 0.5px), aqua calc(40% - 0.5px) calc(40% + 0.5px), transparent calc(40% + 0.5px), transparent calc(60% - 0.5px), aqua calc(60% - 0.5px) calc(60% + 0.5px), transparent calc(60% + 0.5px), transparent calc(80% - 0.5px), aqua calc(80% - 0.5px) calc(80% + 0.5px), transparent calc(80% + 0.5px));
   }
 }
+
 /* CONTACT OVERLAY / FOOTER /////////////////////////////////// */
 .contact-overlay-container {
   width: calc(100% - 40px);
   height: calc(100% - 40px);
   margin: auto;
-  border: 1px solid red;
-  background: rgb(37, 37, 37);
-  box-shadow: 0 0 5px 1px red;
+  border: 2px solid aqua;
+  box-shadow: 0 0 5px 1px aqua;
   position: fixed;
   top: 20px;
   left: 0;
@@ -229,7 +228,6 @@ body {
   transform: none;
   transition: all 1s ease;
 }
-
 .contact-overlay {
   height: 100%;
   padding: 20px;
@@ -237,32 +235,24 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid aqua;
-  box-shadow: inset 0 0 5px 1px aqua;
+  border: 2px solid red;
+  background: rgb(37, 37, 37, 0.7);
+  box-shadow: inset 0 0 5px 1px red;
   overflow-y: auto;
 }
-
 .contact-overlay.footer {
-  background: rgba(37, 37, 37, 0.9);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-}
-@media (max-width: 700px) {
-  .contact-overlay.footer {
-    background: rgb(11, 22, 52);
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-  }
+  border: 1px solid red;
+  background: none;
 }
 .button-aid-container {
   padding: 30px;
 }
-
 button.close-contact-overlay {
   min-width: 50px;
   min-height: 50px;
   border: 1px solid red;
-  background: inherit;
+  background: rgb(37, 37, 37, 0.7);
+  backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,7 +265,6 @@ button.close-contact-overlay {
 .button-aid-container:hover button.close-contact-overlay {
   transform: scale(1.1);
 }
-
 button.close-contact-overlay .button-bars {
   width: 45%;
   height: 3px;
@@ -283,7 +272,6 @@ button.close-contact-overlay .button-bars {
   display: flex;
   filter: drop-shadow(0 0 5px red);
 }
-
 button.close-contact-overlay .button-bars::before,
 button.close-contact-overlay .button-bars::after {
   content: "";
@@ -297,11 +285,9 @@ button.close-contact-overlay:hover .button-bars::before,
 button.close-contact-overlay:hover .button-bars::after {
   background: red;
 }
-
 button.close-contact-overlay .button-bars::after {
   transform: rotate(-45deg);
 }
-
 button.close-contact-overlay-arrow {
   min-width: 70px;
   height: 50px;
@@ -312,63 +298,52 @@ button.close-contact-overlay-arrow {
   cursor: pointer;
   border: 1px solid red;
   border-bottom: none;
-  background: inherit;
+  background: rgb(37, 37, 37, 0.7);
+  backdrop-filter: blur(5px);
   box-shadow: inset 0 0 5px 1px red;
   clip-path: polygon(25% 0, 30% 5%, 70% 5%, 75% 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%, 0 0);
 }
-
 button.close-contact-overlay-arrow .button-arrow-line {
   width: 25px;
   height: 2px;
   background: aqua;
   position: absolute;
 }
-
 button.close-contact-overlay-arrow .button-arrow-line:nth-child(1) {
   transform: translateX(-10px) rotate(-30deg);
 }
-
 button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
   transform: translateX(11px) rotate(30deg);
 }
-
-.contact-wrapper {
-  width: 100%;
-  max-width: 1000px;
-  height: fit-content;
-  margin: 50px auto;
-  padding: 30px;
-  backdrop-filter: blur(7px);
-  border: 1px solid red;
-}
-
 .contact {
   height: fit-content;
   width: 100%;
-  border: 1px solid aqua;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  border: 1px solid red;
+  background: rgb(37, 37, 37, 0.7);
+  backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .contact p {
   padding: 10px;
   color: white;
 }
-
 .button-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .social-link {
   width: 60px;
   height: 50px;
   border: 1px solid red;
   border-radius: 2px;
   background: none center / 35% no-repeat;
+  background-color: rgb(37, 37, 37);
   box-shadow: 0 0 2px 1px red, inset 0 0 2px 1px red;
   filter: drop-shadow(0 0 4px red);
   margin: 20px;
@@ -402,6 +377,7 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
   height: 50px;
   border: 1px solid red;
   border-bottom: none;
+  background: rgb(37, 37, 37);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -415,21 +391,17 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
   cursor: pointer;
   transform: translateY(60px);
 }
-
 .button-to-top:hover {
-  background: rgb(37, 37, 37);
+  background: rgb(74, 74, 74);
 }
-
 .button-to-top.open {
   transform: none;
 }
-
 .button-to-top-bars {
   width: 40%;
   height: 7%;
   position: relative;
 }
-
 .button-to-top-bars::before,
 .button-to-top-bars::after {
   content: "";
@@ -439,15 +411,12 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
   position: absolute;
   filter: drop-shadow(0 0 3px aqua);
 }
-
 .button-to-top-bars::before {
   transform: translateX(-38%) rotate(-35deg);
 }
-
 .button-to-top-bars::after {
   transform: translateX(39%) rotate(35deg);
 }
-
 @media (max-width: 700px) {
   .button-to-top {
     width: 50px;
@@ -455,10 +424,9 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
     background: rgb(37, 37, 37);
   }
   .button-to-top:hover {
-    background: none;
+    background: rgb(37, 37, 37);
   }
 }
-
 .logo-container {
   width: 100%;
   height: 200px;
