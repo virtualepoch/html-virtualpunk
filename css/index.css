@@ -203,6 +203,10 @@ body {
   .wires {
     background: linear-gradient(transparent calc(20% - 0.5px), aqua calc(20% - 0.5px) calc(20% + 0.5px), transparent calc(20% + 0.5px), transparent calc(40% - 0.5px), aqua calc(40% - 0.5px) calc(40% + 0.5px), transparent calc(40% + 0.5px), transparent calc(60% - 0.5px), aqua calc(60% - 0.5px) calc(60% + 0.5px), transparent calc(60% + 0.5px), transparent calc(80% - 0.5px), aqua calc(80% - 0.5px) calc(80% + 0.5px), transparent calc(80% + 0.5px));
   }
+  .wires.top,
+  .wires.bottom {
+    background: linear-gradient(to right, transparent calc(20% - 0.5px), aqua calc(20% - 0.5px) calc(20% + 0.5px), transparent calc(20% + 0.5px), transparent calc(40% - 0.5px), aqua calc(40% - 0.5px) calc(40% + 0.5px), transparent calc(40% + 0.5px), transparent calc(60% - 0.5px), aqua calc(60% - 0.5px) calc(60% + 0.5px), transparent calc(60% + 0.5px), transparent calc(80% - 0.5px), aqua calc(80% - 0.5px) calc(80% + 0.5px), transparent calc(80% + 0.5px));
+  }
 }
 
 /* CONTACT OVERLAY / FOOTER /////////////////////////////////// */
