@@ -57,7 +57,7 @@ function openCloseNavMenu() {
 // OPEN-CLOSE CONTACT OVERLAY //////////////////////////////////
 ///////////////////////////////////////////////////////////////
 
-const contactOverlay = document.querySelector(".contact-overlay-container");
+const contactOverlay = document.querySelector(".contact-overlay");
 
 function openCloseContactOverlay() {
   contactOverlay.classList.toggle("open");
