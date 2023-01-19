@@ -196,9 +196,6 @@ body {
   transform: rotateY(0) rotateX(-90deg) translateY(0);
 }
 @media (max-width: 700px) {
-  /* .wire-frame-container {
-    height: calc(100% - 60px);
-  } */
   .wire-frame {
     box-shadow: none;
   }
@@ -224,7 +221,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   transform: translateY(-100vh);
   transition: all 500ms ease;
   overflow-y: auto;
@@ -234,6 +231,11 @@ body {
     width: calc(100% - 20px);
     height: calc(100% - 20px);
     top: 10px;
+  }
+}
+@media (max-width: 700px) and (orientation: landscape) {
+  .contact-overlay {
+    justify-content: flex-start;
   }
 }
 .contact-overlay.open {
@@ -295,7 +297,8 @@ button.close-contact-overlay .button-bars::after {
 }
 button.close-contact-overlay-arrow {
   min-width: 70px;
-  height: 50px;
+  min-height: 50px;
+  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: center;

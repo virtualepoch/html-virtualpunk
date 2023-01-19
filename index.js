@@ -103,13 +103,13 @@ window.addEventListener(
       false
     );
 
-    touchSurface.addEventListener(
-      "touchmove",
-      function (e) {
-        e.preventDefault(); // prevent scrolling when inside DIV
-      },
-      false
-    );
+    // touchSurface.addEventListener(
+    //   "touchmove",
+    //   function (e) {
+    //     e.preventDefault(); // prevent scrolling when inside DIV
+    //   },
+    //   false
+    // );
 
     touchSurface.addEventListener(
       "touchend",

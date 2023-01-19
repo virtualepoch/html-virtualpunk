@@ -13,7 +13,6 @@
 /* MAIN PAGE CONTENT /////////////////////////////////////// */
 .heading {
   height: calc(100vh - 110px);
-  padding: 20px 0;
   /* margin: 100px auto; */
   display: flex;
   align-items: center;
