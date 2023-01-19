@@ -245,9 +245,19 @@ header {
   .nav-menu {
     justify-content: flex-start;
     overflow: auto;
+    box-shadow: none;
   }
   .nav-link-container {
     height: fit-content;
+    box-shadow: none;
+  }
+}
+@media (max-width: 700px) {
+  .nav-menu {
+    box-shadow: none;
+  }
+  .nav-link-container {
+    box-shadow: none;
   }
 }
 .nav-menu.open {

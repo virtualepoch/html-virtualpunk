@@ -340,14 +340,12 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
   padding: 30px;
   backdrop-filter: blur(7px);
   border: 1px solid red;
-  box-shadow: inset 0 0 5px 1px red, 0 0 5px 1px red;
 }
 
 .contact {
   height: fit-content;
   width: 100%;
   border: 1px solid aqua;
-  box-shadow: 0 0 5px 1px aqua, inset 0 0 5px 1px aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,10 +365,11 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
 
 .social-link {
   width: 60px;
-  height: 60px;
+  height: 50px;
   border: 1px solid red;
+  border-radius: 2px;
   background: none center / 35% no-repeat;
-  box-shadow: 0 0 3px 1px red, inset 0 0 3px 1px red;
+  box-shadow: 0 0 2px 1px red, inset 0 0 2px 1px red;
   filter: drop-shadow(0 0 4px red);
   margin: 20px;
   cursor: pointer;

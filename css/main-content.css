@@ -65,7 +65,6 @@
 }
 @keyframes hero-anim-1 {
   5% {
-    display: block;
     opacity: 1;
   }
   18% {
@@ -75,20 +74,15 @@
   18.5% {
     color: aqua;
     opacity: 0;
-    letter-spacing: inherit;
   }
   19% {
     opacity: 1;
-    letter-spacing: 50px;
   }
   19.5% {
     opacity: 0;
-    letter-spacing: 0;
   }
   20% {
     opacity: 0;
-    letter-spacing: 50px;
-    display: none;
   }
 }
 .hero-section .text:nth-child(2) {
@@ -96,11 +90,7 @@
   animation-delay: 2s;
 }
 @keyframes hero-anim-2 {
-  0% {
-    display: none;
-  }
   18% {
-    display: block;
     opacity: 0;
   }
   25% {
@@ -113,20 +103,15 @@
   38.5% {
     color: aqua;
     opacity: 0;
-    letter-spacing: inherit;
   }
   39% {
     opacity: 1;
-    letter-spacing: 50px;
   }
   39.5% {
     opacity: 0;
-    letter-spacing: 0;
   }
   40% {
     opacity: 0;
-    letter-spacing: 50px;
-    display: none;
   }
 }
 .hero-section .text:nth-child(3) {
@@ -134,11 +119,7 @@
   animation-delay: 2s;
 }
 @keyframes hero-anim-3 {
-  0% {
-    display: none;
-  }
   38% {
-    display: block;
     opacity: 0;
   }
   45% {
@@ -151,20 +132,15 @@
   68.5% {
     color: aqua;
     opacity: 0;
-    letter-spacing: inherit;
   }
   69% {
     opacity: 1;
-    letter-spacing: 50px;
   }
   69.5% {
     opacity: 0;
-    letter-spacing: 0;
   }
   70% {
     opacity: 0;
-    letter-spacing: 50px;
-    display: none;
   }
 }
 .hero-section .text:nth-child(4) {
@@ -172,11 +148,7 @@
   animation-delay: 2s;
 }
 @keyframes hero-anim-4 {
-  0% {
-    display: none;
-  }
   68% {
-    display: block;
     opacity: 0;
   }
   75% {
@@ -189,20 +161,15 @@
   98.5% {
     color: aqua;
     opacity: 0;
-    letter-spacing: inherit;
   }
   99% {
     opacity: 1;
-    letter-spacing: 50px;
   }
   99.5% {
     opacity: 0;
-    letter-spacing: 0;
   }
   100% {
     opacity: 0;
-    letter-spacing: 50px;
-    display: none;
   }
 }
 
