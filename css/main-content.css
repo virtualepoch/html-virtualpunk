@@ -198,9 +198,9 @@
 .content-row-container {
   margin: 50px auto;
   padding: 20px 0;
-  overflow: hidden;
   border-top: 2px solid red;
   border-bottom: 2px solid red;
+  position: relative;
 }
 
 .content-row {
