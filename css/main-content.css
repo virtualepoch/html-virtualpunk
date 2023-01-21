@@ -24,6 +24,9 @@
   height: 300px;
   background-image: linear-gradient(to bottom right, rgb(37, 37, 37), aqua, rgb(37, 37, 37));
 }
+.banner-1{
+  background-image: linear-gradient(transparent, rgb(37, 37, 37));
+}
 
 .hero-section-container {
   width: 100%;
@@ -204,7 +207,7 @@
   border-top: 2px solid red;
   border-bottom: 2px solid red;
   width: 100%;
-  padding: 80px 20px;
+  padding: 50px 20px;
   position: relative;
 }
 .content-container.transparent-bg {

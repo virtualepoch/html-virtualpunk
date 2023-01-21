@@ -77,12 +77,12 @@ for (let i = 0; i < contactBtns.length; i++) {
 // }
 
 // IMAGE SLIDER #2 ////////////////////////////////////
-const buttons = document.querySelectorAll("[data-carousel-button");
+const buttons = document.querySelectorAll("[data-slide-button");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-    const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+    const offset = button.dataset.slideButton === "next" ? 1 : -1;
+    const slides = button.closest("[data-image-slider]").querySelector("[data-slides]");
 
     const activeSlide = slides.querySelector("[data-active]");
     let newIndex = [...slides.children].indexOf(activeSlide) + offset;
