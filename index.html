@@ -11,12 +11,24 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main-content.css">
-    <link rel="stylesheet" href="css/image-slider.css">
+    <link rel="stylesheet" href="css/image-slider-1.css">
+    <link rel="stylesheet" href="css/image-slider-2.css">
+    <script src="index.js" defer></script>
     <title>VIRTUAL-PUNK</title>
 </head>
 
 <body>
     <!-- GLOBAL SCOPED SITE ELEMENTS (WITH FIXED POSITION) -->
+    <div class="main-overlay">
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+        </div>
+    </div>
+
     <header>
         <div class="top-header">
             <div class="side">
@@ -51,22 +63,12 @@
                 <a href="/about.html" class="link">
                     <p class="link-text">About</p>
                 </a>
-                <div class="link" onclick="openCloseNavMenu(), openCloseContactOverlay()">
+                <button class="link" onclick="openCloseNavMenu(), openCloseContactOverlay()">
                     <p class="link-text">Contact</p>
-                </div>
+                </button>
             </div>
         </div>
     </header>
-
-    <div class="main-overlay">
-        <div class="logo-container">
-            <div class="logo"></div>
-            <div class="logo"></div>
-            <div class="logo"></div>
-            <div class="logo"></div>
-            <div class="logo"></div>
-        </div>
-    </div>
 
     <div class="underlay-container">
         <div class="wire-frame-container">
@@ -106,10 +108,6 @@
         </button>
     </div>
 
-    <div class="button-to-top" onclick="scrollToTop()">
-        <div class="button-to-top-bars"></div>
-    </div>
-
     <section class="page">
         <div class="heading">
             <div class="hero-section-container">
@@ -124,10 +122,14 @@
                 </div>
             </div>
         </div>
-        <div class="content-row-container">
-            <div class="image-slider-wrapper">
-                <button class="move-slide left"></button>
-                <button class="move-slide right"></button>
+
+        <div class="banner"></div>
+
+        <section class="content-container transparent-bg">
+            <h2 class="slider-title">IMAGE-SLIDER-1</h2>
+            <div class="image-slider-1">
+                <button class="move-slide left" onclick="moveSlidesLeft()"></button>
+                <button class="move-slide right" onclick="moveSlidesRight()"></button>
                 <div class="image-slider-container">
                     <div class="slides-container">
                         <div class="slide slide-1"></div>
@@ -137,8 +139,34 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content-row-container">
+        </section>
+
+        <div class="banner"></div>
+
+        <section aria-label="Newest Photos" class="content-container color-bg image-slider-2">
+            <h2 class="slider-title">IMAGE-SLIDER-2</h2>
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8656</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="https://images.pexels.com/photos/8108572/pexels-photo-8108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Image #1">
+                    </li>
+                    <li class="slide">
+                        <img src="https://images.pexels.com/photos/8721342/pexels-photo-8721342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Image #2">
+                    </li>
+                    <li class="slide">
+                        <img src="https://images.unsplash.com/photo-1564836663277-c4aa761b9882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                            alt="Image #3">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="banner"></div>
+
+        <section class="content-container transparent-bg">
             <div class="content-row row-1">
                 <div class="column">
                     <h2 class="content-heading">All Themes are Responsive</h2>
@@ -153,8 +181,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content-row-container">
+        </section>
+
+        <div class="banner"></div>
+
+        <section class="content-container color-bg">
             <div class="content-row row-1">
                 <div class="column">
                     <h2 class="content-heading">All Themes are Responsive</h2>
@@ -169,7 +200,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <div class="banner"></div>
     </section>
 
     <footer>
@@ -186,8 +218,9 @@
             </div>
         </div>
     </footer>
-
-    <script src="index.js"></script>
+    <button class="button-to-top" onclick="scrollToTop()">
+        <div class="button-to-top-bars"></div>
+    </button>
 </body>
 
 </html>

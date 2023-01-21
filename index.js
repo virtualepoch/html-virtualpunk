@@ -64,6 +64,36 @@ for (let i = 0; i < contactBtns.length; i++) {
   contactBtns[i].addEventListener("click", openCloseContactOverlay);
 }
 
+// IMAGE SLIDER #1 CLICK EVENTS //////////////////////////////////////
+// const imageSliderLeftButton = document.querySelector("button.move-slide.left");
+// const imageSliderRightButton = document.querySelector("button.move-slide.right");
+// const slidesContainer = document.querySelector(".slides-container");
+
+// function moveSlidesLeft(){
+//   slidesContainer.style.transform = "translateX(calc(25% + 3px))"
+// }
+// function moveSlidesRight(){
+//   slidesContainer.style.transform = "translateX(calc(-25% - 3px))"
+// }
+
+// IMAGE SLIDER #2 ////////////////////////////////////
+const buttons = document.querySelectorAll("[data-carousel-button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+    const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+
+    const activeSlide = slides.querySelector("[data-active]");
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+    if (newIndex < 0) newIndex = slides.children.length - 1;
+    if (newIndex >= slides.children.length) newIndex = 0;
+
+    slides.children[newIndex].dataset.active = true;
+    delete activeSlide.dataset.active;
+  });
+});
+
 // ONLOAD EVENTS //////////////////////////////////////////////////
 window.addEventListener(
   "load",

@@ -20,7 +20,9 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,10 +34,20 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button{
+  background: none;
+}
+
+a:focus,
+button:focus {
+  outline-color: aqua;
+}
+
 body {
   background: black;
 }
 
+/* PAGE OVERLAY & ANIMATION //////////////////////////// */
 .main-overlay {
   width: 100%;
   height: 100%;
@@ -77,6 +89,7 @@ body {
   }
 }
 
+/* PAGE UNDERLAY & ANIMATION ////////////////////////////// */
 .underlay-container {
   width: 100%;
   height: 100vh;
@@ -414,7 +427,7 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   transition: transform 300ms ease-in-out;
   cursor: pointer;
   transform: translateY(60px);
@@ -428,7 +441,9 @@ button.close-contact-overlay-arrow .button-arrow-line:nth-child(2) {
 .button-to-top-bars {
   width: 40%;
   height: 7%;
+  margin: auto;
   position: relative;
+  display: flex;
 }
 .button-to-top-bars::before,
 .button-to-top-bars::after {
