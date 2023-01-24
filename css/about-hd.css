@@ -1,0 +1,33 @@
+.about-hd-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+.classical-guitar {
+  flex: 1;
+  aspect-ratio: 1/3;
+  display: flex;
+  background: url(/ramirez-1000.png) 0 0 / 100% 100%;
+  filter: drop-shadow(0 0 5px aqua);
+}
+.web-development {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font: 800 40px Ailerons;
+  filter: drop-shadow(-2px -2px 1px aqua);
+  border: solid red;
+  padding: 20px;
+  border-radius: 20px;
+}
+.lucy-1 {
+  flex: 1;
+  aspect-ratio: 1/1;
+  background: url(/lucy-1.jpg) 0 0 / 100% no-repeat;
+  box-shadow: 0 0 10px 1px aqua;
+  border-radius: 20px;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main-content.css">
+    <link rel="stylesheet" href="css/image-slider-1.css">
+    <link rel="stylesheet" href="css/image-slider-2.css">
+    <link rel="stylesheet" href="css/about-hd.css">
+    <script src="index.js" defer></script>
+    <title>VIRTUAL-PUNK</title>
+</head>
+
+<body>
+    <!-- GLOBAL SCOPED SITE ELEMENTS (WITH FIXED POSITION) -->
+    <div class="main-overlay">
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="top-header">
+            <div class="side">
+                <a href="/" class="logo-container">
+                    <div class="logo"></div>
+                    <div class="logo"></div>
+                    <div class="logo"></div>
+                    <div class="logo"></div>
+                    <div class="logo"></div>
+                </a>
+            </div>
+            <a class="site-title-container" href="/">
+                <div class="title-border"></div>
+                <h1 class="site-title">THE-HOME- <span class="site-title-word">DEPOT</span></h1>
+                <div class="title-border"></div>
+            </a>
+            <div class="side">
+                <button class="button-nav-menu" onclick="openCloseNavMenu()">
+                    <div class="open-bars"></div>
+                    <div class="close-bars"></div>
+                </button>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-link-container">
+                <a href="/" class="link active">
+                    <p class="link-text">Home</p>
+                </a>
+                <a href="/about.html" class="link">
+                    <p class="link-text">About</p>
+                </a>
+                <a href="/about.html" class="link">
+                    <p class="link-text">About</p>
+                </a>
+                <button class="link" onclick="openCloseNavMenu(), openCloseContactOverlay()">
+                    <p class="link-text">Contact</p>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="underlay-container">
+        <div class="wire-frame-container">
+            <div class="wire-frame"></div>
+            <div class="wire-frame"></div>
+            <div class="wire-frame"></div>
+            <div class="wire-frame"></div>
+            <div class="wire-frame"></div>
+            <div class="wire-frame"></div>
+            <div class="wire-frame"></div>
+            <div class="wires"></div>
+            <div class="wires right"></div>
+            <div class="wires top"></div>
+            <div class="wires bottom"></div>
+        </div>
+    </div>
+
+    <div class="contact-overlay">
+        <div class="button-aid-container">
+            <button class="close-contact-overlay" onclick="openCloseContactOverlay()">
+                <div class="button-bars"></div>
+            </button>
+        </div>
+        <div class="contact">
+            <div class="button-row">
+                <a href="/" target="_blank" class="social-link facebook"></a>
+                <a href="/" target="_blank" class="social-link twitter"></a>
+            </div>
+            <div class="button-row">
+                <a href="/" target="_blank" class="social-link youtube"></a>
+                <a href="/" target="_blank" class="social-link email"></a>
+            </div>
+        </div>
+        <button class="close-contact-overlay-arrow" onclick="openCloseContactOverlay()">
+            <div class="button-arrow-line"></div>
+            <div class="button-arrow-line"></div>
+        </button>
+    </div>
+
+    <section class="page">
+        <div class="about-hd-section">
+            <div class="classical-guitar"></div>
+            <div class="web-development">WEB DEVELOPMENT-<br>
+            HTML, CSS, JAVASCRIPT, REACT...</div>
+            <div class="lucy-1"></div>
+            <div class="lucy-2"></div>
+        </div>
+
+        <div class="banner banner-1"></div>
+
+        <section class="content-container color-bg">
+            <h2 class="slider-title">IMAGE-SLIDER-1</h2>
+            <div class="image-slider num-1">
+                <button class="slide-button prev" onclick="moveSlidesLeft()"></button>
+                <button class="slide-button next" onclick="moveSlidesRight()"></button>
+                <div class="image-slider-container">
+                    <div class="slides-container">
+                        <div class="slide slide-1"></div>
+                        <div class="slide slide-2"></div>
+                        <div class="slide slide-3"></div>
+                        <div class="slide slide-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="banner"></div>
+
+        <section aria-label="Newest Photos" class="content-container color-bg">
+            <h2 class="slider-title">IMAGE-SLIDER-2</h2>
+            <div class="image-slider num-2" data-image-slider>
+                <button class="slide-button prev" data-slide-button="prev"></button>
+                <button class="slide-button next" data-slide-button="next"></button>
+                <div class="image-slider-container">
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="https://images.pexels.com/photos/8108572/pexels-photo-8108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Image #1">
+                        </li>
+                        <li class="slide">
+                            <img src="https://images.pexels.com/photos/8721342/pexels-photo-8721342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Image #2">
+                        </li>
+                        <li class="slide">
+                            <img src="https://images.unsplash.com/photo-1564836663277-c4aa761b9882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                alt="Image #3">
+                        </li>
+                        <li class="slide">
+                            <img src="https://images.unsplash.com/photo-1561344640-2453889cde5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80"
+                                alt="Image #4">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="banner"></div>
+
+        <section class="content-container color-bg">
+            <div class="content-row row-1">
+                <div class="column">
+                    <h2 class="content-heading">All Themes are Responsive</h2>
+                    <p class="content-content">Everything will look great and function properly on any device.</p>
+                </div>
+                <div class="column">
+                    <div class="responsive-project">
+                        <div class="responsive-computer">
+                            <div class="responsive-image"></div>
+                            <div class="responsive-phone"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="banner"></div>
+
+        <section class="content-container color-bg">
+            <div class="content-row row-1">
+                <div class="column">
+                    <h2 class="content-heading">All Themes are Responsive</h2>
+                    <p class="content-content">Everything will look great and function properly on any device.</p>
+                </div>
+                <div class="column">
+                    <div class="responsive-project">
+                        <div class="responsive-computer">
+                            <div class="responsive-image"></div>
+                            <div class="responsive-phone"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="banner"></div>
+    </section>
+
+    <footer>
+        <div class="contact-overlay footer">
+            <div class="contact">
+                <div class="button-row">
+                    <a href="/" target="_blank" class="social-link facebook"></a>
+                    <a href="/" target="_blank" class="social-link twitter"></a>
+                </div>
+                <div class="button-row">
+                    <a href="/" target="_blank" class="social-link youtube"></a>
+                    <a href="/" target="_blank" class="social-link email"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="button-to-top" onclick="scrollToTop()">
+        <div class="button-to-top-bars"></div>
+    </button>
+</body>
+
+</html>
