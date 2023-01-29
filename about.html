@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main-content.css">
-    <link rel="stylesheet" href="css/image-slider-1.css">
-    <link rel="stylesheet" href="css/image-slider-2.css">
-    <link rel="stylesheet" href="css/about-hd.css">
+    <!-- <link rel="stylesheet" href="css/search.css"> -->
+    <link rel="stylesheet" href="css/search-pokemon.css">
     <script src="index.js" defer></script>
-    <title>VIRTUAL-PUNK</title>
+    <!-- <script src="search.js" defer></script> -->
+    <script src="search-pokemon.js" defer></script>
+    <title>VIRTUAL-PUNK> ABOUT</title>
 </head>
 
 <body>
@@ -110,93 +111,44 @@
     </div>
 
     <section class="page">
-        <div class="heading">About</div>
 
-        <div class="banner banner-1"></div>
-
-        <section class="content-container color-bg">
-            <h2 class="slider-title">IMAGE-SLIDER-1</h2>
-            <div class="image-slider num-1">
-                <button class="slide-button prev" onclick="moveSlidesLeft()"></button>
-                <button class="slide-button next" onclick="moveSlidesRight()"></button>
-                <div class="image-slider-container">
-                    <div class="slides-container">
-                        <div class="slide slide-1"></div>
-                        <div class="slide slide-2"></div>
-                        <div class="slide slide-3"></div>
-                        <div class="slide slide-4"></div>
+        <!-- SECTION FOR SEARCH BAR EXPERIMENTS -->
+        <!-- <div class="search-section">
+            <div class="search-wrapper">
+                <label for="search">Search Users</label>
+                <input type="search" id="search" placeholder="ENTER DATA HERE" data-search>
+            </div>
+            <div class="pokemon-cards" data-pokemon-cards-container>
+                <template data-pokemon-template>
+                    <div class="card">
+                        <div class="header" data-header></div>
+                        <img class="image" data-image src=""></img>
                     </div>
+                </template>
+
+
+            </div>
+        </div> -->
+        <div class="search-pokemon">
+            <div class="search-wrapper">
+                <h1>Search Pokemon</h1>
+                <div class="input-button-container">
+                    <input id="pokemonName" type="text" placeholder="ENTER NAME HERE">
+                    <button id="search"></button>
                 </div>
             </div>
-        </section>
+            <div class="pokemonBox"></div>
+        </div>
+
+
+
+        <div class="banner"></div>
+        <div class="heading">
+            <h1 style="color: white; font: 800 2rem Raleway;">About</h1>
+        </div>
 
         <div class="banner"></div>
 
-        <section aria-label="Newest Photos" class="content-container color-bg">
-            <h2 class="slider-title">IMAGE-SLIDER-2</h2>
-            <div class="image-slider num-2" data-image-slider>
-                <button class="slide-button prev" data-slide-button="prev"></button>
-                <button class="slide-button next" data-slide-button="next"></button>
-                <div class="image-slider-container">
-                    <ul data-slides>
-                        <li class="slide" data-active>
-                            <img src="https://images.pexels.com/photos/8108572/pexels-photo-8108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Image #1">
-                        </li>
-                        <li class="slide">
-                            <img src="https://images.pexels.com/photos/8721342/pexels-photo-8721342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="Image #2">
-                        </li>
-                        <li class="slide">
-                            <img src="https://images.unsplash.com/photo-1564836663277-c4aa761b9882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-                                alt="Image #3">
-                        </li>
-                        <li class="slide">
-                            <img src="https://images.unsplash.com/photo-1561344640-2453889cde5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80"
-                                alt="Image #4">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <div class="banner"></div>
-
-        <section class="content-container color-bg">
-            <div class="content-row row-1">
-                <div class="column">
-                    <h2 class="content-heading">All Themes are Responsive</h2>
-                    <p class="content-content">Everything will look great and function properly on any device.</p>
-                </div>
-                <div class="column">
-                    <div class="responsive-project">
-                        <div class="responsive-computer">
-                            <div class="responsive-image"></div>
-                            <div class="responsive-phone"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="banner"></div>
-
-        <section class="content-container color-bg">
-            <div class="content-row row-1">
-                <div class="column">
-                    <h2 class="content-heading">All Themes are Responsive</h2>
-                    <p class="content-content">Everything will look great and function properly on any device.</p>
-                </div>
-                <div class="column">
-                    <div class="responsive-project">
-                        <div class="responsive-computer">
-                            <div class="responsive-image"></div>
-                            <div class="responsive-phone"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="banner"></div>
     </section>
 
     <footer>

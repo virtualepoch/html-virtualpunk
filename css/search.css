@@ -1,0 +1,81 @@
+.search-section {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 50px 20px;
+}
+
+.search-wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-left: solid red;
+  border-right: solid red;
+}
+
+label {
+  padding: 20px;
+  font: 900 33px Ailerons;
+  letter-spacing: -1px;
+  color: red;
+  filter: drop-shadow(-3px -1px 1px aqua) drop-shadow(-6px -2px 1px darkslategray);
+}
+
+input {
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  font: 900 25px Ailerons;
+  color: red;
+  border: none;
+  border-left: solid red;
+  border-bottom: 1px solid red;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: transparent;
+  box-shadow: inset -2px 2px 5px 1px rgb(0, 0, 0, 0.3);
+  transition: all 500ms ease-in-out;
+}
+input:focus {
+  border: 1px solid red;
+  border-left: solid red;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  outline: none;
+}
+input::placeholder {
+  font: 900 22px Ailerons;
+  color: rgb(255, 107, 107);
+  text-align: center;
+}
+
+.pokemon-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  margin-top: 2rem;
+  border: 10px solid blue;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.card > .header {
+  margin-bottom: 0.25rem;
+}
+
+.card > .image {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
+}
