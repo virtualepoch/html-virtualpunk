@@ -11,12 +11,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main-content.css">
-    <!-- <link rel="stylesheet" href="css/search.css"> -->
-    <link rel="stylesheet" href="css/search-pokemon.css">
+    <link rel="stylesheet" href="css/canvas.css">
     <script src="index.js" defer></script>
-    <!-- <script src="search.js" defer></script> -->
-    <script src="search-pokemon.js" defer></script>
-    <title>VIRTUAL-PUNK> ABOUT</title>
+    <title>VIRTUAL-PUNK> CANVAS</title>
 </head>
 
 <body>
@@ -72,7 +69,7 @@
         </div>
     </header>
 
-    <div class="underlay-container">
+    <!-- <div class="underlay-container">
         <div class="wire-frame-container">
             <div class="wire-frame"></div>
             <div class="wire-frame"></div>
@@ -86,7 +83,7 @@
             <div class="wires top"></div>
             <div class="wires bottom"></div>
         </div>
-    </div>
+    </div> -->
 
     <div class="contact-overlay">
         <div class="button-aid-container">
@@ -110,41 +107,11 @@
         </button>
     </div>
 
-    <section class="page">
+    <section class="page" style="border: solid red;">
 
-        <!-- SECTION FOR SEARCH BAR EXPERIMENTS -->
-        <!-- <div class="search-section">
-            <div class="search-wrapper">
-                <label for="search">Search Users</label>
-                <input type="search" id="search" placeholder="ENTER DATA HERE" data-search>
-            </div>
-            <div class="pokemon-cards" data-pokemon-cards-container>
-                <template data-pokemon-template>
-                    <div class="card">
-                        <div class="header" data-header></div>
-                        <img class="image" data-image src=""></img>
-                    </div>
-                </template>
-
-
-            </div>
-        </div> -->
-        <div class="search-pokemon">
-            <div class="search-wrapper">
-                <h1>Search Pokemon</h1>
-                <div class="input-button-container">
-                    <input id="pokemonName" type="text" placeholder="ENTER NAME HERE">
-                    <button id="search"></button>
-                </div>
-            </div>
-            <div class="pokemonBox"></div>
-        </div>
-
-
-
-        <div class="banner"></div>
-        <div class="heading">
-            <h1 style="color: white; font: 800 2rem Raleway;">About</h1>
+        <div class="canvas-container">
+            <canvas id="canvas1"></canvas>
+            <button class="button-canvas">change flake</button>
         </div>
 
         <div class="banner"></div>
@@ -168,6 +135,7 @@
     <button class="button-to-top" onclick="scrollToTop()">
         <div class="button-to-top-bars"></div>
     </button>
+    <script src="/canvas.js"></script>
 </body>
 
 </html>
