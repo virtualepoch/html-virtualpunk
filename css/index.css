@@ -62,6 +62,7 @@ body {
   border-bottom: 12px solid red;
   background: black;
   transition: transform 500ms ease-in 1s;
+  transform: translateY(-100vh);
 }
 .main-overlay .logo-container {
   width: 200px;
