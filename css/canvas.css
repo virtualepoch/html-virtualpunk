@@ -1,6 +1,6 @@
 .canvas-container {
   width: 100%;
-  height: calc(100vh - 130px);
+  aspect-ratio: 1;
   border: 5px solid aqua;
   display: flex;
 }
