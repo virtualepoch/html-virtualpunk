@@ -24,7 +24,7 @@
   height: 300px;
   background-image: linear-gradient(to bottom right, rgb(37, 37, 37), aqua, rgb(37, 37, 37));
 }
-.banner-1{
+.banner-1 {
   background-image: linear-gradient(transparent, rgb(37, 37, 37));
 }
 
@@ -226,10 +226,10 @@
   position: relative;
   border: 1px solid red;
   transition: all 1s ease;
-  transform: scale(1);
+  transform: scale(0);
 }
 
-.content-row-container.open .content-row {
+.content-container.open .content-row {
   transform: scale(1);
 }
 

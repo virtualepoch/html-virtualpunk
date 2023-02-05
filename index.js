@@ -26,7 +26,7 @@ function isInViewPort(element) {
 }
 
 function contentRowOpen() {
-  const contentRowContainers = document.getElementsByClassName("content-row-container");
+  const contentRowContainers = document.getElementsByClassName("content-container");
 
   for (let i = 0; i < contentRowContainers.length; i++) {
     if (isInViewPort(contentRowContainers[i])) {

@@ -1,10 +1,5 @@
 // HTML ELEMENTS
 const canvas = document.getElementById("canvas1");
-const inputSidesValue = document.querySelector("#input-sides").value;
-
-document.querySelector("#input-sides").addEventListener("keydown", function (e) {
-  if (e.code === "Enter") branches = inputSidesValue;
-});
 
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
