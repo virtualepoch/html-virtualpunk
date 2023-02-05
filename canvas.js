@@ -1,14 +1,10 @@
 // HTML ELEMENTS
 const canvas = document.getElementById("canvas1");
-<<<<<<< HEAD
-
-=======
->>>>>>> 7daee75a367aab5fbeb165ba8d46987373b16249
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const maxLevel = 2;
+const maxLevel = 5;
 const branches = 1;
 // const sides = Math.floor(Math.random() * 10) + 3);
 const sides = 4;
