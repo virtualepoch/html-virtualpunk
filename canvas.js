@@ -1,17 +1,18 @@
 // HTML ELEMENTS
 const canvas = document.getElementById("canvas1");
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7daee75a367aab5fbeb165ba8d46987373b16249
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const maxLevel = 3;
-const branches = 2;
+const maxLevel = 2;
+const branches = 1;
 // const sides = Math.floor(Math.random() * 10) + 3);
 const sides = 4;
 const spread = Math.random() * 48 + 0.51;
-
-console.log(Math.random * 48);
 
 ctx.translate(canvas.width / 2, canvas.height / 2);
 
@@ -21,7 +22,7 @@ function drawLine(level) {
   if (level > maxLevel) return;
 
   ctx.strokeStyle = "rgb(0,255,255)";
-  ctx.lineWidth = 2;
+  ctx.lineWidth = 4;
   ctx.beginPath();
   ctx.moveTo(0, 0);
   ctx.lineTo(200, 0);
@@ -30,11 +31,12 @@ function drawLine(level) {
   for (let i = 1; i < branches + 1; i++) {
     ctx.save();
     ctx.translate((200 * i) / (branches + 1), 0);
-    ctx.scale(0.5, 0.5);
+    ctx.scale(1, 0.5);
     ctx.save();
 
     ctx.rotate(angle);
     drawLine(level + 1);
+    ctx.strokeStyle = "rgb(255,255,0)";
     ctx.restore();
     ctx.save();
 
@@ -61,4 +63,8 @@ drawSnowflake();
 //   drawSnowflake();
 // }
 
-const buttonRandom = document.querySelector(".button-canvas").addEventListener("click", randomizeSnowflake());
+const inputSidesValue = document.querySelector("#input-sides");
+
+inputSidesValue.addEventListener("keydown", function (e) {
+  if (e.code === "Enter") sides = inputSidesValue.value;
+});
