@@ -18,7 +18,7 @@ window.onscroll = function () {
 
 // ON VISIBILITY CHANGE FUNCTIONS ////////////////////////////////
 function isInViewPort(element) {
-  innerHeightRatio = 0.8;
+  const innerHeightRatio = 0.8;
 
   const rect = element.getBoundingClientRect();
   return rect.top <= (window.innerHeight * innerHeightRatio || document.documentElement.clientHeight * innerHeightRatio);
@@ -26,13 +26,13 @@ function isInViewPort(element) {
 }
 
 function contentRowOpen() {
-  const contentRowContainers = document.getElementsByClassName("content-container");
+  const contentContainers = document.getElementsByClassName("content-container");
 
-  for (let i = 0; i < contentRowContainers.length; i++) {
-    if (isInViewPort(contentRowContainers[i])) {
-      contentRowContainers[i].classList.add("open");
-    } else if (!isInViewPort(contentRowContainers[i])) {
-      contentRowContainers[i].classList.remove("open");
+  for (let i = 0; i < contentContainers.length; i++) {
+    if (isInViewPort(contentContainers[i])) {
+      contentContainers[i].classList.add("open");
+    } else if (!isInViewPort(contentContainers[i])) {
+      contentContainers[i].classList.remove("open");
     }
   }
 }
